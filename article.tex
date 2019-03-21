@@ -1,5 +1,5 @@
 \documentclass[twocolumn,tighten,times]{aastex62}
-
+%\documentclass[twocolumn,times]{aastex62}
 %% The default is a single spaced, 10 point font, single spaced article.
 %% There are 5 other style options available via an optional argument. They
 %% can be envoked like this:
@@ -37,40 +37,25 @@
 %%                 affiliation information after each name. Creates a much
 %%                 long author list but may be desirable for short author papers
 %%
-%% these can be used in any combination, e.g.
-%%
-%% \documentclass[twocolumn,linenumbers,trackchanges]{aastex62}
-%%
-%% AASTeX v6.* now includes \hyperref support. While we have built in specific
-%% defaults into the classfile you can manually override them with the
-%% \hypersetup command. For example,
-%%
-%%\hypersetup{linkcolor=red,citecolor=blue,filecolor=cyan,urlcolor=magenta}
-%%
-%% will change the color of the internal links to red, the links to the
-%% bibliography to green, the file links to cyan, and the external links to
-%% magenta. Additional information on \hyperref options can be found here:
-%% https://www.tug.org/applications/hyperref/manual.html#x1-40003
-%%
-%% If you want to create your own macros, you can do so
-%% using \newcommand. Your macros should appear before
-%% the \begin{document} command.
-%%
+
+\usepackage{xspace}  %  to preserve spaces following a control word
+
 \newcommand{\vdag}{(v)^\dagger}
 \newcommand\aastex{AAS\TeX}
 \newcommand\latex{La\TeX}
+\newcommand{\ia}{SN\,Ia\xspace}
+\newcommand{\ias}{SNe\,Ia\xspace}
+\newcommand\one{(C)ON\lowercase{e}M\lowercase{g}\xspace}
 
-%% Tells LaTeX to search for image files in the 
-%% current directory as well as in the figures/ folder.
+ 
+%% figures live in this folder 
 \graphicspath{{./}{figures/}}
 
 
-%% Reintroduced the \received and \accepted commands from AASTeX v5.2
+
 %\received{January 1, 2018}
 %\revised{January 7, 2018}
 %\accepted{\today}
-%% Command to document which AAS Journal the manuscript was submitted to.
-%% Adds "Submitted to " the arguement.
 \submitjournal{AAS Journals}
 \shorttitle{Type Ia SNe from evolved helium stars}
 \shortauthors{Antoniadis et al.}
@@ -78,7 +63,7 @@
 
 \begin{document}
 
-\title{NORMAL AND PECULIAR TYPE Ia SUPERNOVAE FROM NON-ACCRETING HELIUM STARS}
+\title{TYPE Ia SUPERNOVAE FROM NON-ACCRETING HELIUM STARS}
 
 
 \correspondingauthor{John Antoniadis}
@@ -97,31 +82,29 @@ Auf dem H\"{u}gel 71, 53121, Bonn DE}
 Auf dem H\"{u}gel 71, 53121, Bonn DE}
 
 \begin{abstract}
-  
+  We consider the evolution of helium stars in the mass range $1.5 \leq M/{\rm M}_{\odot}\leq 3.5$
 \end{abstract}
 
-%% Keywords should appear after the \end{abstract} command. 
-%% See the online documentation for the full list of available subject
-%% keywords and the rules for their use.
-\keywords{stars: neutron --- stars: pulsars -- stars: massive -- 
-miscellaneous --- catalogs --- surveys}
+
+\keywords{stars: neutron --- stars: massive}
 
 
 \section{Introduction} \label{sec:intro}
-Type Ia supernovae (SNe\,Ia) signal the  disruption of a compact star 
+Type Ia supernovae (\ias{}) signal the  disruption of a star 
 in a thermonuclear explosion. The prompt conversion of $\sim 1$\,M$_{\odot}$ of  
 material into iron-group elements and the subsequent radioactive decay of $^{56}$Ni
 ejecta, power a luminous transient that can shine across 
-cosmological distances \citep[e.g.][]{Arnett:1982}. SN\,Ia light curves are 
+cosmological distances \citep[e.g.][]{Arnett:1982}. \ia light curves are 
 also remarkably homogeneous, exhibiting a tight correlation between maximum luminosity and 
-rate of decline \citep{Phillips:1993ng}. Together, these  salient properties make them 
-unique cosmological distance indicators and valuable tools for probing the expansion 
-history of the Universe \citep{Riess:1998cb,Perlmutter:1998np}. 
+rate of decline \citep{Phillips:1993ng}. Considered together, these  salient properties make \ias 
+unique cosmological distance indicators and valuable tools for probing the expansion history of the Universe \citep{Riess:1998cb,Perlmutter:1998np}. 
 
  Despite their central role in Astrophysics and Cosmology, 
- the origins and physics of SNe\,Ia are still debated. 
- SN\,Ia spectra (by definition) lack hydrogen and helium but have strong silicon and iron-group lines. 
- Considered together with the high inferred  $^{56}$Ni ejecta mass (typically $\gtrsim 0.2$\,M$_{\odot}$), this indicates  that SN\,Ia progenitors are 
+ the origins and physics of \ia{} explosions are still debated. 
+ \ia spectra, by definition, lack hydrogen and helium but have strong silicon and iron-group lines. 
+ Considered together with their high luminosities which imply 
+ ejecta masses (typically $\gtrsim 0.2$\,M$_{\odot}$), 
+these spectral properties indicate  that \ia progenitors are 
  compact stellar cores that disrupt, rather than exploding 
  massive stars that eject their hydrogen-rich envelopes
  \citep[][and references therein]{Maoz:2013hna}. 
@@ -129,35 +112,37 @@ history of the Universe \citep{Riess:1998cb,Perlmutter:1998np}.
  are promising progenitor systems, consistent with the observed 
  spectra and inferred energetics \citep{Arnett:1969,Wang:2012za,Maoz:2013hna}.
  
- In  typical SN\,Ia scenarios, matter accretion onto the WD is required to trigger the explosion, either through stable mass transfer from a donor star,  or in a merger event.  
- 
- 
- 
+ In  typical \ia scenarios, matter accretion onto the WD is required to trigger the explosion, 
+ either through stable mass transfer from a donor star,  or in a merger event.  
 Thus far, none of these single- (SD) and double-degenerate (DD) models 
-are without problems. For instance SD models require significant 
-fine-tuning of the mass accretion rate, and predict an observable 
-interaction between the ejecta and the donor star which has not yet 
-been observed in early lightcurves. 
-Similarly super-Chandrasekhar DD models generally 
-predict too-few events whereas lower-mass mergers may survive instead of exploding promptly. 
+are without problems \citep{vanKerkwijk:2010he}. For instance SD models require significant 
+fine-tuning of the mass accretion rate, and also predict 
+interaction between the ejecta and the donor star, which has not yet 
+been observed in early light curves. 
+Similarly, super-Chandrasekhar DD models generally 
+predict too few events, whereas lower-mass mergers may survive instead of exploding promptly. 
 
-Motivated by these questions, we explore an alternative progenitor model
-in which a degenerate ONe or hybrid ONeC core grows via helium shell burning 
-inside a He star and then ignites before the onset of $e^{-}-$ captures onto $^{20}$Ne. 
-As we shall see in detail, models in the relevant mass range develop a 
-super-giant structure due to helium shell burning. We argue that 
-this leads to the complete removal of the He-rich envelope, 
-either via a super-Eddington wind or, mode likely, in an inevitable common-envelope episode. 
-As we shall see in Section\,\ref{sec:2}, 
+In this paper we discuss an alternative progenitor model
+in which a low-mass He star evolves onto a near-Chandrasekhar mass 
+oxygen-neon (ONe) or carbon-oxygen-neon (CONe) star, 
+which then ignites oxygen before the onset of $e^{-}$-captures onto $^{20}$Ne.
+
+ 
+%super-giant structure due to helium shell burning. We argue that 
+%this likely leads to the complete removal of the He-rich envelope, 
+%either via a super-Eddington wind or, mode likely, in an inevitable common-envelope episode. 
+%As we shall see in Section\,\ref{sec:2}, 
 
 
-\section{Evolution of degenerate cores inside helium stars}\label{sec:2}
+\section{Formation of \one cores}\label{sec:2}
 The formation of degenerate ONeMg cores has been investigated extensively, 
-especially in the context of super-AGB evolution, 
-and the formation of neutron stars via accretion-induced collapse 
-and/or e-capture supernovae \citep[][]{Chen:2014,Denissenkov:2013qaa,Schwab:2015bma,Lecoanet:2016,Meyer:2017elq}.
-Most commonly, ONeMg cores develo insude stars with initial zero-age 
-main-sequence (ZAMS) masses between $\sim 6$ and 9\,M$_{\odot}$. 
+especially in the context of super-AGB evolution. 
+\citep[for recent results see][]{Chen:2014,Denissenkov:2013qaa,Schwab:2015bma,Lecoanet:2016,Meyer:2017elq,Woosley:2019sdf}.
+Generally, the evolution during and beyond core-helium burning in this regime is complicated and poorly understood. In this section, we briefly summarise some of the key aspects of (C)ONe core formation, which are most relevant to the discussion below. 
+
+Most commonly, (C)ONe cores develop inside stars which are born with zero-age 
+main-sequence (ZAMS) masses between $\sim 6$ and 9\,M$_{\odot}$ \citep{Farmer:2015afs}.
+
 After core helium burning, the carbon-oxygen core cools efficiently via neutrino emission. 
 As a result, the maximum temperature is attained off-centre, and eventually 
 carbon ignites off-center and propagates initially toward the centre and then outwards 
@@ -189,7 +174,8 @@ is presented in a companion paper by Chanlaridis et al. 2019.
 \subsection{}
 
 
-\textsc{mesa} solves the stellar structure and evolution equations using an implicit Langrangian scheme. 
+\textsc{mesa} solves the stellar structure and evolution 
+equations using an implicit Langrangian scheme. 
 
 \section{Energetics}
 
@@ -203,13 +189,17 @@ where
 
 
 Hubble-time integrated number of SN\,Ia is $\sim 2\pm 1$\,per\,1000\,M$_{\odot}$. 
-Number of stars able to develo He cores with masses between 1.8 and 2.5\,M$_{\odot}$ if they enter a CE before the sDU episode is $n_{\rm sAGB}\simeq 9.6$\,per\,1000\,M$_{\odot}$ asumming a \cite{habrier:2004vw} initial mass function. 
+Number of stars able to develo He cores with masses between 
+1.8 and 2.5\,M$_{\odot}$ if they enter a CE before the sDU episode is 
+$n_{\rm sAGB}\simeq 9.6$\,per\,1000\,M$_{\odot}$ 
+assuming a \cite{habrier:2004vw} initial mass function. 
 
 
 Alternative approach: number of systems that give 
 \section{Discussion}
 
-Summarise. Say how they they would interact with a binary etc. Explosion physics, summarise results of Nomoto group and explosion simmulations are higher densities. 
+Summarise. Say how they they would interact with a binary etc. Explosion physics, 
+summarise results of Nomoto group and explosion simmulations are higher densities. 
 
 
 
