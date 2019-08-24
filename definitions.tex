@@ -5,6 +5,7 @@
 
 %elements
 \newcommand{\iso}[2]{\ensuremath{\mathrm{{^{#2}}#1}}} % Isotopes, e.g. \iso{c}{12}
+\newcommand{\abun}[2]{\ensuremath{X(\mathrm{{^{#2}}#1}})} % Isotope abundance 
 
 % units 
 \newcommand{\msun}{\ensuremath{\mathrm{\,M_\odot}}} % Msol 
@@ -23,17 +24,19 @@
 
 %quantities
 \newcommand{\tc}{\ensuremath{T_{\mathrm{c}}}} % Central temperature 
-\newcommand{\logc}{\ensuremath{\log_{10} T_{\mathrm{c}}}} %log central temperature
-\newcommand{\logtc}{\ensuremath{\log_{10} T}} % Log temperature
+\newcommand{\logtc}{\ensuremath{\log_{10} (T_{\mathrm{c}}/{\mathrm{K})}}} %log central temperature
+\newcommand{\logt}{\ensuremath{\log_{10} T}} % Log temperature
+\newcommand{\logl}{\ensuremath{\log_{10} (L/\lsun)}} % Log Luminosity
 \newcommand{\rhoc}{\ensuremath{\rho_{\mathrm{c}}}} % Central density 
-\newcommand{\logrhoc}{\ensuremath{\log \rho_{\mathrm{c}}}} % Log central density
+\newcommand{\logrhoc}{\ensuremath{\log_{10} (\rho_{\mathrm{c}}/ \mathrm{gr\,cm^{-3}})}} % Log central density
 \newcommand{\logrho}{\ensuremath{\log \rho}} % Log  density
 \newcommand{\teff}{\ensuremath{T_{\mathrm{eff}}}} % Effective temperature 
-\newcommand{\logteff}{\ensuremath{\log_{10} T_{\mathrm{eff}}}} % Log effective temperature
+\newcommand{\logteff}{\ensuremath{\log_{10} (T_{\mathrm{eff}} /\mathrm{K})}} % Log effective temperature
 \newcommand{\mch}{\ensuremath{M_{\mathrm{Ch}}}} % Chandrasekhar mass
 \newcommand{\mdot}{\ensuremath{\dot{M}}} % Mdot
 \newcommand{\pdot}{\ensuremath{\dot{P}}} % Pdot
 \newcommand{\rdot}{\ensuremath{\dot{R}}} % Rdot
+\newcommand{\ye}{\ensuremath{Y_e}} % Rdot
 
 %Abbreviations
 \newcommand{\vdag}{(v)^\dagger} %version
