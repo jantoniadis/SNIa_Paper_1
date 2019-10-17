@@ -1,12 +1,19 @@
-\documentclass[twocolumn,times,tighten]{aastex62}
-%\documentclass[letter]{aa}  
+%\documentclass[twocolumn,times,tighten]{aastex62}
+\documentclass{aa}  
 
 \usepackage{amsmath}
 \usepackage{nicefrac}
 
+%
+\usepackage{graphicx}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{txfonts}
+\usepackage{multirow}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[colorlinks,citecolor=blue,urlcolor=blue]{hyperref}
+
 \input{definitions.tex}
  
-%% figures live in this folder 
 \graphicspath{{./}{figures/}}
 %@arxiver{Rhoc_vs_Tc.pdf}
 
@@ -14,38 +21,62 @@
 %\received{January 1, 2018}
 %\revised{January 7, 2018}
 %\accepted{\today}
-\submitjournal{ApJ {\it Letters}}
-\shorttitle{\ias from non-accreting progenitors}
-\shortauthors{Antoniadis et al.}
+%\submitjournal{ApJ {\it Letters}}
+%\shorttitle{\ias from non-accreting progenitors}
+%\shortauthors{Antoniadis et al.}
 
 
 \begin{document}
 
 
-\title{TYPE Ia SUPERNOVAE FROM NON-ACCRETING PROGENITORS}
+\title{Type Ia supernovae from non-accreting progenitors}
  
 
 
-\correspondingauthor{John Antoniadis}
-\email{janton@mpifr.de}
+%\correspondingauthor{John Antoniadis}
+%\email{janton@mpifr.de}
 
-\author[0000-0002-0786-7307]{John Antoniadis}
+%\author[0000-0002-0786-7307]{John Antoniadis}
 
-\affil{Max-Planck Institut f\"{u}r Radioastronomie, Auf dem H\"{u}gel 69, 53121, Bonn DE}
-\affil{Argelander Institut f\"{u}r Astronomie,
-Auf dem H\"{u}gel 71, 53121, Bonn DE}
+%\affil{Max-Planck Institut f\"{u}r Radioastronomie, Auf dem H\"{u}gel 69, 53121, Bonn DE}
+%\affil{Argelander Institut f\"{u}r Astronomie,
+%Auf dem H\"{u}gel 71, 53121, Bonn DE}
 
-\author[0000-0002-9323-9728]{Savvas Chanlaridis}
-\author{G\"{o}tz Gr\"{a}fener}
-\affil{Argelander Institut f\"{u}r Astronomie, 
-Auf dem H\"{u}gel 71, 53121, Bonn DE}
-\author{Norbert Langer}
-\affil{Argelander Institut f\"{u}r Astronomie, 
-Auf dem H\"{u}gel 71, 53121, Bonn DE}
-\affil{Max-Planck Institut f\"{u}r Radioastronomie, Auf dem H\"{u}gel 69, 53121, Bonn DE}
+%\author[0000-0002-9323-9728]{Savvas Chanlaridis}
+%\author{G\"{o}tz Gr\"{a}fener}
+%\affil{Argelander Institut f\"{u}r Astronomie, 
+%Auf dem H\"{u}gel 71, 53121, Bonn DE}
+%\author{Norbert Langer}
+%\affil{Argelander Institut f\"{u}r Astronomie, 
+%Auf dem H\"{u}gel 71, 53121, Bonn DE}
+%\affil{Max-Planck Institut f\"{u}r Radioastronomie, Auf dem H\"{u}gel 69, 53121, Bonn DE}
 
-\begin{abstract}
-Type Ia supernovae (\ias) are  manifestations of helium-deficient stars disrupting in a 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%A&A def 
+
+   \author{J. Antoniadis\inst{1,2}
+   \and S. Chanlaridis\inst{2}
+   \and G. Gr\"{a}fener\inst{2}
+   \and N. Langer\inst{2,1}
+          }
+
+   \institute{Max Planck Institut f\"{u}r Radioastronomie
+              Auf dem H\"{u}gel 69, 53121, Bonn, Germany
+         \and
+             Argelander Institut f\"{u}r Astronomie, Auf dem H\"{u}gel 71, 53121, Bonn, Germany \\
+             \email{jantoniadis@mpifr-bonn.mpg.de}
+             }
+
+   \date{Received; accepted}
+
+
+
+
+%\begin{abstract}
+\abstract 
+{Type Ia supernovae (\ias) are  manifestations of helium-deficient stars disrupting in a 
 thermonuclear runaway. While explosions of carbon-oxygen white dwarfs are 
 thought to account for the majority of events, part of the observed diversity 
 may be due to varied progenitor channels. We demonstrate that 
@@ -60,10 +91,12 @@ thermonuclear runaways are likely to prevent core collapse,
 leading to the complete disruption of the star in a \ia 
 explosion with a kinetic energy of $\sim 10^{51}$\,erg. 
 The frequency of progenitor systems would suffice to account  
-for a large fraction of \ias in star-forming  galaxies. 
-\end{abstract}
+for a large fraction of \ias in star-forming  galaxies. }
+%\end{abstract}
 
 \keywords{binaries: general - stars: evolution - supernovae: general}
+
+\maketitle
 
 \section{Introduction} \label{sec:intro}
 
@@ -102,7 +135,6 @@ DD mergers on the other hand may produce a variety of outcomes,
 ranging from prompt 
 explosions to long-lived remnants, or the delayed formation of a neutron star \citep{Livio:2018rue}. In addition, their overall contribution to the observed \ia rate may be too low \citep{vanKerkwijk:2010he,claeys2014a,Sato:2015spa}. %Maoz:2013hna
 
-
 Over the past 50 years, systematic studies of \ia explosions have revealed a large
 diversity in their properties \citep{Taubenberger:2017hoo}. 
 Examples of extreme outliers include luminous 
@@ -138,6 +170,7 @@ The available nuclear energy at the time of central oxygen ignition suffices to 
  
 
 \section{\one cores: formation and evolution}\label{sec:2}
+\subsection{Overview}
 Degenerate stellar cores of neon-oxygen composition form inside stars with ZAMS masses  
 between  7 and 11\msun\ \citep{Farmer:2015afs,Woosley:2019sdf}. 
 After core helium burning, such stars enter a super-asymptotic giant branch 
@@ -163,7 +196,7 @@ between neutrino cooling due to the presence of \iso{Na}{23}\iso{Ne}{23} and
 \iso{Mg}{25}\iso{Na}{25} Urca pairs, and compressional heating due to accretion from the helium burning shell \citep{Schwab:2017epw}. 
 SAGB stars are subject to significant dredge-up  and 
 thermally unstable shell burning. 
-These effects may impact substantially the ability of the core to grown in mass fast enough. 
+These effects may impact substantially the ability of the core to grow in mass fast enough. 
 
 However, thermal pulses and dredge-up episodes do not 
 occur when the hydrogen envelope 
@@ -297,7 +330,7 @@ The evolution following central oxygen ignition is not adequately modeled in our
  
 
 \subsection{Energetics and nucleosynthesis}\label{sec:3}
-Figure\,\ref{fig:nuc} shows the density profiles of \textsc{m1} and \textsc{m2} at maximum compactness ($\logrhoc=9.77$ and 9.22 respectively), and at the end of our simulations. At the onset of oxygen ignition, \textsc{m1} and \textsc{m2} have binding energies of $E_{\rm bind}=-5.76\times10^{50}$ and $-5.16\times10^{50}$\,erg, and average electron fractions of $\ye= 0.496$ and  0.499 for \textsc{m1} and \textsc{m2} respectively. If these progenitors were to produce an \ia of  typical composition of $\sim 0.7\msun$ of nickel and iron and 0.6\msun of Si-group elements, the corresponding kinetic energies would be $E_{\rm kin}=E_{\rm nuc}-E_{\rm bind}\simeq 0.83\times10^{51}$ and  $1.17\times10^{51}$\,erg. 
+Figure\,\ref{fig:nuc} shows the density profiles of \textsc{m1} and \textsc{m2} at maximum compactness ($\logrhoc=9.77$ and 9.22, respectively), and at the end of our simulations. At the onset of oxygen ignition, \textsc{m1} and \textsc{m2} have binding energies of $E_{\rm bind}=-5.76\times10^{50}$ and $-5.16\times10^{50}$\,erg, and average electron fractions of $\ye= 0.496$ and  0.499, for \textsc{m1} and \textsc{m2} respectively. If these progenitors were to produce an \ia of  typical composition of $\sim 0.7\msun$ of nickel and iron and 0.6\msun of Si-group elements, the corresponding kinetic energies of the ejecta would be $E_{\rm kin}=E_{\rm nuc}-E_{\rm bind}\simeq 0.83\times10^{51}$ and  $1.17\times10^{51}$\,erg. 
 Obviously, the nucleosynthesis yields depend on the actual
 \ye\ and density profiles during explosive burning. If 
 \textsc{m1} achieves nuclear statistical equilibrium (NSE)
@@ -351,8 +384,8 @@ Overall, we conclude that stripped \one cores could be responsible for at least 
 
 Besides the total number of \ias, a property that is more challenging to match is the evolution of the \ia rate with cosmic time. \ias from this channel would have delay times dominated by the main sequence lifetime of the progenitors, i.e. of order 30 to 78\,Myr, for stars with ZAMS masses between 7 and 11\msun. Binaries interacting via early Case\,A RLO prior to the removal of the hydrogen envelope, could contribute events up to $\sim 300$\,Myr following star formation (corresponding to the MS lifetime of a 3.5\msun star). 
 These delay times could help account for the high \ia rates in star-forming galaxies \citep{Maoz:2010pz,claeys2014}. 
-Still, some variant of the DD channel would still be required to explain events with much longer delay times.  
-However, if an \one with some amount of residual carbon distributed throughout its interior were to evolve in a similar way due to mass accretion from a companion, or in a merger, then the corresponding explosion could contribute a \ia several Gyrs after star formation. 
+Hence, some variant of the DD channel would still be required to explain events with much longer delay times.  
+However, if an \one WD  were to evolve in a similar way due to mass accretion from a companion, or in a merger, then the corresponding explosion could contribute a \ia several Gyrs after star formation. 
 
 \section{Summary}\label{sec:5}
 We have shown that stars able to form degenerate \one cores after losing 
@@ -369,24 +402,22 @@ evolution of the Galaxy \citep[in analogy to ][for ECSNe]{Jones:2018ule}.
 
 
 The frequency of the corresponding progenitor systems 
-is sufficient to account for a considerable fraction of the observed \ia  rate  (Section\,\ref{sec:4}). Since, the bulk of events would occur only $\sim 50$\,Myr after star formation, this channel is mostly relevant to active late-type galaxies. The shorter delay times compared to traditional \ia scenarios, opens further interesting avenues for constraining this model, e.g. with low-metallicity stars.  
+is sufficient to account for a considerable fraction of the observed \ia  rate  (Section\,\ref{sec:4}). Since, the bulk of events would occur only $\sim 50$\,Myr after star formation, this channel is mostly relevant to star-forming galaxies. 
 
-A similar \ia channel has  been proposed by \cite{waldman2006a} and \cite{waldman2008}, who have also demonstrated that some helium stars with \one cores can explode before any significant deleptonization occurs. However, these authors do not follow the final evolution stages, and their progenitors still retain a small He-rich envelope at the end. While here we demonstrate that the helium envelope is  likely lost only  after the core has grown to \mch, its evolution remains a major uncertainty for this progenitor channel. If helium is removed sufficiently early, e.g. due to binary interactions or dynamical instabilities, then this channel would instead create  sub-\mch\ \one\ WDs. 
+A similar \ia channel has  been proposed by \cite{waldman2006a} and \cite{waldman2008}, who have also demonstrated that some helium stars with \one cores can explode before any significant deleptonization occurs. However, these authors do not follow the final evolution stages, and their progenitors still retain a small He-rich envelope at the end. While here we demonstrate that the helium envelope is  likely lost only  after the core has grown to \mch, its evolution remains a major uncertainty for this progenitor channel. If helium is removed sufficiently early, e.g. due to binary interactions, then sub-\mch\ \one\ WDs would be formed instead. 
  
-In spite of the mass-loss uncertainties, if viable, this channel would help explain some of the observed \ia diversity. Since either star in binary system may potentially explode as a \ia without accreting from its  companion, the resulting events can resemble setups expected in both SD and DD scenarios. Explosions resulting from the explosion of the secondary, would follow a first core-collapse SN. This could lead to \ia remnants with no luminous surviving stars, high proper motions due to a kick from the first SN \cite[like the Kepler remnant,][]{Chiotellis:2011jy}, and possibly associated with a neutron star. 
-Since the  envelope can be removed either due to winds, case-BB mass transfer, or a common envelope event, some diversity is also expected in the SN environment. In turn this would influence bot the appearance of the explosion and the evolution of the SN remnant. 
+In spite of the mass-loss uncertainties, if viable, this channel would help explain some of the observed \ia diversity. Since either star in binary system may potentially explode as a \ia without accreting from its  companion, the resulting events can resemble setups expected in both SD and DD scenarios. Explosions of secondaries, would follow a first core-collapse SN. This could lead to \ia remnants with no luminous surviving stars, high proper motions due to a kick from the first SN \cite[like the Kepler remnant,][]{Chiotellis:2011jy}, and possibly associated with a neutron star. 
+Since the  envelope can be removed either due to winds, case-BB mass transfer, or a common envelope event, some diversity is also expected in the SN environment. In turn this would influence both the appearance of the explosion and the evolution of the SN remnant. 
 
-Finally this channel seems relevant to other emerging correlations, e.g. the one found between SN locations and the velocity of Si features, or the apparent correlation between \ia rate and IMF variations at low masses \citep{Maoz:2013hna}.                                             
+Finally, this channel seems relevant to other emerging correlations, e.g. the one found between SN locations and the velocity of Si features, or the apparent correlation between \ia rate and IMF variations at low masses \citep{Maoz:2013hna}.                                             
 
 
-\acknowledgments
-We thank Philipp Podsiadlowski, Friedrich R\"{o}pke,  Samuel Jones and Josiah Schwab for useful discussions.
+
+\begin{acknowledgements}
 %
- This research made extensive use of NASA's ADS.
+ This research made extensive use of NASA's ADS, \textsc{mesa}\footnote{http://mesastar.org} \citep{Paxton:2010ji,Paxton:2013pj,Paxton:2015jva,Paxton:2017eie} and Astropy\footnote{http://www.astropy.org} \citep{Price-Whelan:2018hus}
+\end{acknowledgements}
 
-\software{\textsc{mesa}\footnote{http://mesastar.org} \citep{Paxton:2010ji,Paxton:2013pj,Paxton:2015jva,Paxton:2017eie},
-          Astropy\footnote{http://www.astropy.org} \citep{Price-Whelan:2018hus}},
-          \mesa{plot} \citep{robert_farmer_2018_1441329}
 
 \bibliography{singleIas} 
 \bibliographystyle{yahapj}
