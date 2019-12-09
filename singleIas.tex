@@ -20,7 +20,7 @@
  
 \graphicspath{{./}{figures/}}
 
-\hypersetup{draft}
+%\hypersetup{draft}
 \begin{document}
 
 
@@ -205,7 +205,7 @@ of residual unburned \iso{C}{12}, Urca cooling and constant mass growth from she
 burning, in the late evolution of \one cores that originate from helium stars. 
 
 \subsection{Numerical Calculations: Input Physics}\label{sec:2.1}
-We use \mesa (version 10386) to follow the evolution of two helium-star models, \textsc{m1} and \textsc{m2}, with  masses of  {\bf 2.5} and 1.8\msun\ respectively. 
+We use \mesa (version 10386) to follow the evolution of two helium-star models, \textsc{m1} and \textsc{m2}, with  masses of 2.5 and 1.8\msun\ respectively. 
 The initial models have uniform compositions with $Y=0.98$ and $Z=0.02$ \citep[solar abundances are taken from ][]{grevesse1998}. We employ a nuclear network that considers 43  isotopes, from \iso{H}{1} to \iso{Ni}{58}. Reaction rates are based on the \texttt{JINA reaclib v2.0} compilation \citep{cyburt2010}. Electron screening factors and cooling rates from thermal neutrinos are evaluated as in \cite{Farmer:2015afs}, and references therein. 
 Weak interaction rates are taken from \cite{Suzuki:2015iry}. 
 Wind mass-loss rates are calculated using \mesa's \texttt{Dutch} compilation of recipes  \citep{Paxton:2013pj},  which is composition-independent. We use ``Type 2'' opacities during and after core helium burning.
@@ -292,17 +292,17 @@ Figure\,\ref{fig:2} gives an overview of the central density and temperature evo
 Following the main carbon-burning episode, both stars continue to contract, while cooling  due to neutrino  emission. As shell 
 burning intensifies, compressional heating eventually balances 
 off neutrino losses, at $\logrhoc \simeq 8.3$ and 8.0 for \textsc{m1} and \textsc{m2} respectively. The subsequent evolution depends on the composition. 
+
+For \textsc{m1}, the degenerate core is composed 
+mostly of neon and oxygen. The most abundant isotopes have  $\abun{O}{16}\simeq 0.43$;  $\abun{Ne}{20}\simeq 0.42$; $\abun{Mg}{24}\simeq0.1$;  $\abun{C}{12}\simeq 0.011$; $\abun{Na}{23}\simeq 0.037$; $\abun{Mg}{25}\simeq 0.001$. Between $\logrhoc=9.05$ and 9.25, the temperature drops to $\logtc\simeq 8.2$ due to \iso{Mg}{25}\iso{Na}{25} and \iso{Na}{23}\iso{Na}{23} direct Urca reactions. At higher densities, neutrino cooling ceases completely, and the temperature rises again (Figure\,\ref{fig:2}). 
 \begin{figure*}[htb!]
 %@arxiver{Rhoc_vs_Tc.pdf}
 \begin{center}
-\includegraphics[width=1.0\textwidth]{Rhoc_vs_Tc.pdf}
+\includegraphics[width=1.00\textwidth]{Rhoc_vs_Tc.pdf}
 \caption{Evolution of the core density and temperature for \textsc{m1} and \textsc{m2}. The dashed line shows the approximate boundary for electron degeneracy. Burning thresholds for a 100\% abundace of the corresponding species are indicated with dotted lines. The NSE threshold assumes an equilibrium timescale of 1\,s.  In model \textsc{m1}b, the energy contribution of carbon-consuming reactions is set to zero (see text). \textsc{M2}b shows the core evolution of a 1.8\msun without overshooting. While this model stopped at $\logrhoc \simeq 8.2$ due to numerical convergence issues, the final core mass is similar to \textsc{m2}.}
 \label{fig:2}
 \end{center}
 \end{figure*}
-For \textsc{m1}, the degenerate core is composed 
-mostly of neon and oxygen. The most abundant isotopes have  $\abun{O}{16}\simeq 0.43$;  $\abun{Ne}{20}\simeq 0.42$; $\abun{Mg}{24}\simeq0.1$;  $\abun{C}{12}\simeq 0.011$; $\abun{Na}{23}\simeq 0.037$; $\abun{Mg}{25}\simeq 0.001$. Between $\logrhoc=9.05$ and 9.25, the temperature drops to $\logtc\simeq 8.2$ due to \iso{Mg}{25}\iso{Na}{25} and \iso{Na}{23}\iso{Na}{23} direct Urca reactions. At higher densities, neutrino cooling ceases completely, and the temperature rises again (Figure\,\ref{fig:2}). 
-
 When $\logrhoc=9.65$, exothermic electron captures on \iso{Mg}{24} and 
 \iso{Na}{24} start occurring at a substantial rate, raising the temperature 
 adequately to ignite carbon. In turn, this triggers oxygen burning and a thermonuclear runaway at  $\logrhoc= 9.77$. This ignition density is  
@@ -410,7 +410,7 @@ nebulae \citep[$\sim 20\%$;][]{Tsebrenko:2014kea}.
 
 
 \begin{acknowledgements}
-%
+We thank the referee for the extremely helpful report. 
  This research made extensive use of NASA's ADS, \textsc{mesa}\footnote{http://mesastar.org} \citep{Paxton:2010ji,Paxton:2013pj,Paxton:2015jva,Paxton:2017eie} and Astropy\footnote{http://www.astropy.org} \citep{Price-Whelan:2018hus}. Figure 1 was created with NuGridPy\footnote{https://github.com/NuGrid/NuGridPy}
 \end{acknowledgements}
 
