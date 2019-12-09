@@ -20,7 +20,7 @@
  
 \graphicspath{{./}{figures/}}
 
-%\hypersetup{draft}
+\hypersetup{draft}
 \begin{document}
 
 
@@ -54,7 +54,7 @@ thought to account for the majority of events, part of the observed diversity
 may be due to varied progenitor channels. We demonstrate that 
 helium stars with masses between $\sim$1.8 and 2.5\msun\ may evolve 
 into highly degenerate, near-Chandrasekhar mass cores with 
-{\bf helium-free} envelopes that subsequently  ignite carbon and oxygen explosively at densities $\sim(1.8-5.9)\times 10^{9}$\denu. This happens either due to core growth from 
+helium-free envelopes that subsequently  ignite carbon and oxygen explosively at densities $\sim(1.8-5.9)\times 10^{9}$\denu. This happens either due to core growth from 
 shell burning (when the core has a hybrid CO/NeO composition), 
 or following ignition of residual carbon triggered by  
 exothermic electron captures on \iso{Mg}{24} (for a 
@@ -113,11 +113,11 @@ In addition, their overall contribution to the observed \ia rate may be too low 
 
 Over the past 50 years, systematic studies of \ia explosions have revealed a large
 diversity in their properties \citep{Taubenberger:2017hoo}. 
-{\bf Notable outliers include} luminous 
+Notable outliers include luminous 
 \citep[e.g. SN\,1991T;][]{filippenko1992} and ultra-luminous  
 \citep[e.g. SNLS-03D3bb;][]{Howell:2006vn} SNe; SN\,1991bg-like transients which
-are faint and fast evolving  \citep{ruiz-lapuente1993}; {\bf SN 2002cx-like SNe, 
-also known as SNe\,Iax, that may be the outcome of pure thermonuclear deflagrations \citep{Jha:2017gwq}}
+are faint and fast evolving  \citep{ruiz-lapuente1993}; SN 2002cx-like SNe, 
+also known as SNe\,Iax, that may be the outcome of pure thermonuclear deflagrations \citep{Jha:2017gwq}
 and SN\,2012ca-like events, dubbed SNe Ia-CSM, for which 
 there is evidence for interaction with a dense circum-stellar 
 medium \citep{Bochenek:2017vok}. 
@@ -128,7 +128,7 @@ Finally, there seems to be a correlation with environment,
 as star-forming  galaxies typically  host more,  and brighter \ias \citep{Maoz:2013hna}. 
 
 
-{\bf While part of this diversity can be understood within the framework of SD and DD 
+While part of this diversity can be understood within the framework of SD and DD 
 families, there may exist additional 
 evolutionary pathways leading to \ias. 
 It is know since long that intermediate-mass stars form
@@ -142,7 +142,7 @@ In this case, however, the emerging supernova would be a H- and He-rich
 “SNe 1.5”.
 \cite{waldman2006a} and \cite{waldman2008} have considered the possible connection between ONe cores and \ias in more detail, 
 demonstrating that some helium stars with \one cores can explode before any significant deleptonization due to electron captures on \iso{Ne}{20} occurs.
-Their models  still retain a small He-rich envelope at the end and therefore, it is again unclear if such transients would appear as classical \ias. }
+Their models  still retain a small He-rich envelope at the end and therefore, it is again unclear if such transients would appear as classical \ias. 
 
 In spite of the aforementioned works, ONe cores are generally thought to produce massive WDs or core-collapse electron-capture supernovae \citep[ECSNe; e.g.,][]{nomoto1991,gutierrez1996,Takahashi:2013ena}. 
 However, recent three-dimensional hydrodynamical 
@@ -162,7 +162,7 @@ In addition, during the final evolutionary stages, the envelope inflates signifi
 The available nuclear energy at the time of central oxygen ignition suffices to unbind the star 
 and to yield ejecta with kinetic energies comparable to what is expected for classical \ias (Section\,\ref{sec:3}).
  This mechanism  does not require accretion from the binary companion and 
- therefore may contribute significantly to the \ia  rate in young stellar populations (Section\,\ref{sec:4}). }
+ therefore may contribute significantly to the \ia  rate in young stellar populations (Section\,\ref{sec:4}). 
  
 
 \section{\one cores: formation and evolution}\label{sec:2}
@@ -208,7 +208,7 @@ burning, in the late evolution of \one cores that originate from helium stars.
 We use \mesa (version 10386) to follow the evolution of two helium-star models, \textsc{m1} and \textsc{m2}, with  masses of  {\bf 2.5} and 1.8\msun\ respectively. 
 The initial models have uniform compositions with $Y=0.98$ and $Z=0.02$ \citep[solar abundances are taken from ][]{grevesse1998}. We employ a nuclear network that considers 43  isotopes, from \iso{H}{1} to \iso{Ni}{58}. Reaction rates are based on the \texttt{JINA reaclib v2.0} compilation \citep{cyburt2010}. Electron screening factors and cooling rates from thermal neutrinos are evaluated as in \cite{Farmer:2015afs}, and references therein. 
 Weak interaction rates are taken from \cite{Suzuki:2015iry}. 
-Wind mass-loss rates are calculated using \mesa's \texttt{Dutch} compilation of recipes  \citep{Paxton:2013pj}, {\bf which is composition-independent. We use ``Type 2'' opacities during and after core helium burning.}
+Wind mass-loss rates are calculated using \mesa's \texttt{Dutch} compilation of recipes  \citep{Paxton:2013pj},  which is composition-independent. We use ``Type 2'' opacities during and after core helium burning.
 
 Our baseline  model considers convection, thermohaline and semi-convectional mixing. Convective stability is 
 evaluated using the Ledoux criterion. By default, \mesa uses  standard mixing-length theory  \citep[MTL;][]{cox1968} for convective mixing and energy transport. However, following carbon burning, both our models develop 
@@ -218,19 +218,19 @@ option available in \mesa \citep{Paxton:2013pj}, which artificially reduces
 the super-adiabatic gradient leading to  an enhanced convective energy 
 transport efficiency.  This  allows us to follow the evolution of the core 
 after carbon burning without interruptions.We further discuss this choice and its impact on the envelope evolution and the final mass in Section\,\ref{sec:5}. 
-The MLT mixing length parameter is set to $a_{\rm MLT}=2.0$ for both models. {\bf For 
+The MLT mixing length parameter is set to $a_{\rm MLT}=2.0$ for both models. For 
 thermohaline mixing we employ 
 the \cite{kippenhahn1980} 
- treatment, setting $D_{\text{TH}} = 1.0$ for the diffusion coefficient. Semi-convection is evaluated following \cite{langer1983}, adopting an efficiency parameter of $\alpha_{{\rm SEM}} = 1.0$. Our models do not employ the predictive convective boundary mixing approach described in \cite{Paxton:2017eie}.} 
+ treatment, setting $D_{\text{TH}} = 1.0$ for the diffusion coefficient. Semi-convection is evaluated following \cite{langer1983}, adopting an efficiency parameter of $\alpha_{{\rm SEM}} = 1.0$. Our models do not employ the predictive convective boundary mixing approach described in \cite{Paxton:2017eie}. 
 
-{\bf While \textsc{m1} does not consider the effects of convective overshoot ($f_{\rm ov}=0.0$), in \textsc{m2}, we set $f_{\rm ov}=0.014$ across all convective boundaries}, including the base of the 
+While \textsc{m1} does not consider the effects of convective overshoot ($f_{\rm ov}=0.0$), in \textsc{m2}, we set $f_{\rm ov}=0.014$ across all convective boundaries, including the base of the 
 carbon-burning flame. While mixing at this interface is unlikely \citep{lecoanet2016}, 
 we use this as a means to  quench the flame before it reaches the center.  
 Other processes such as rotation and thermohaline mixing can lead to the 
 same outcome for similar initial helium core masses \citep{Farmer:2015afs}.
 The \mesa inlists are publicly available\footnote{\url{DOI:10.5281/zenodo.3566787}}. 
 An  extended grid exploring a broad range of initial masses, 
-metallicities, overshooting {\bf and wind} parameters will be presented in an 
+metallicities, overshooting and wind parameters will be presented in an 
 accompanying paper \citep{chanlaridis2019}.       
 
 
@@ -241,7 +241,7 @@ Figure\,\ref{fig:1} shows Kippenhahn diagrams for
 \begin{figure*}[htb!]
   \centering 
   \includegraphics[width=1.00\textwidth]{Kip.pdf}
-  \caption{Kippenhahn diagrams following the evolution of \textsc{m1} (left) and \textsc{m2} after core helium depletion. Blue-shaded areas indicate regions in which nuclear burning occurs, i.e. locations for which the nuclear energy $\epsilon_{\rm nuc}$ exceeds energy losses due to neutrino emission, $\epsilon_\nu$. Gray regions are subject to convective mixing. {\bf $t=0$ corresponds to the onset of core helium burning.}}
+  \caption{Kippenhahn diagrams following the evolution of \textsc{m1} (left) and \textsc{m2} after core helium depletion. Blue-shaded areas indicate regions in which nuclear burning occurs, i.e. locations for which the nuclear energy $\epsilon_{\rm nuc}$ exceeds energy losses due to neutrino emission, $\epsilon_\nu$. Gray regions are subject to convective mixing.$t=0$ corresponds to the onset of core helium burning.}
   \label{fig:1}
 \end{figure*}
 \textsc{m1} first ignites carbon at mass coordinate $\sim 0.3\msun$, when the total mass  is $ 2.25\msun$, and the CO core has a mass of $\sim 1.15\msun$.  
@@ -251,10 +251,10 @@ mass of carbon has been accumulated below the burning shell. The entire carbon-b
 40,000\,yr. During most of this time, the star is a red giant with a low-density convective envelope  
 ($R\simeq 125\rsun$, $\logteff\simeq 3.75$, $\logl\simeq 
 4.3$), and loses mass at a rate of  
-$\mdot\simeq10^{-6}\mdotsun$, in good agreement with {\bf the
-recent \textsc{kepler} models \citep{Woosley:2019sdf}, which employ the mass-loss scheme of \cite{Yoon:2017dme}, more specifically targeted to helium stars. While the mass-loss strength is highly uncertain, it has recently been suggested that the winds during the helium and carbon burning phases in low-mass helium stars may be less powerful than the \texttt{Dutch} schemes predict, given that Wolf-Rayet stars are not seen in this mass range \citep{Vink:2017ujd}. In such a case, the cores in our models could grow faster.}
+$\mdot\simeq10^{-6}\mdotsun$, in good agreement with the
+recent \textsc{kepler} models \citep{Woosley:2019sdf}, which employ the mass-loss scheme of \cite{Yoon:2017dme}, more specifically targeted to helium stars. While the mass-loss strength is highly uncertain, it has recently been suggested that the winds during the helium and carbon burning phases in low-mass helium stars may be less powerful than the \texttt{Dutch} schemes predict, given that Wolf-Rayet stars are not seen in this mass range \citep{Vink:2017ujd}. In such a case, the cores in our models could grow faster.
 
-As the core contracts and its surface gravity increases, the surrounding burning shells become progressively thinner. The envelope responds by expanding  and the stellar structure resembles closely that of an SAGB core. {\bf Interestingly, \cite{Woosley:2019sdf} finds that only helium stars with masses between $\sim 1.6$ and 3.2\msun, develop sufficiently thin helium-burning shells to cause envelope inflation. Hence, higher-mass stars would likely retain a significant fraction of outer layer until the end, leading to Type Ib SN explosions.}
+As the core contracts and its surface gravity increases, the surrounding burning shells become progressively thinner. The envelope responds by expanding  and the stellar structure resembles closely that of an SAGB core. Interestingly, \cite{Woosley:2019sdf} finds that only helium stars with masses between $\sim 1.6$ and 3.2\msun, develop sufficiently thin helium-burning shells to cause envelope inflation. Hence, higher-mass stars would likely retain a significant fraction of outer layer until the end, leading to Type Ib SN explosions.
 
 The last $\sim 5,000$\,yr of the evolution are characterized by vigorous burning in two neighbouring shells which eventually merge, resulting in violent burning, at $t\simeq 2.41$\,Myr (Figure\,\ref{fig:1}). In this phase, the star reaches extremely high luminosities up to $\log{L/L_\odot = 6.25}$, generating   a strong stellar wind that lasts for $\sim3000$\,yr and  eventually removes the remaining He-rich envelope.
 The evolution of the envelope during this stage 
@@ -266,7 +266,7 @@ Conversely, using standard MLT, the envelope becomes dynamically unstable and ou
 By extrapolating the core-growth rate, the core of the star would likely still reach \mch. 
 As our helium star may be the product of close binary evolution, at this stage further interactions would easily remove the envelope, as its binding energy corresponds to only a minuscule fraction of the orbital energy reservoir. 
 
-Either way, the combination of enhanced mass loss {\bf from both winds and binary interaction} and vigorous burning, leads to the complete depletion of helium in the envelope. 
+Either way, the combination of enhanced mass loss  from both winds and binary interaction and vigorous burning, leads to the complete depletion of helium in the envelope. 
 Following the neon flash, the small residual envelope contracts and the wind ceases completely for the last $\sim$5,000\,yr (Figure\,\ref{fig:1}). Our model stops when the star has a mass of 1.39\msun~ (see Sec.\,\ref{sec:runway}).  
 
 The evolution of the envelope in \textsc{m2} is similar (Figure\,\ref{fig:1}). Here, 
@@ -274,7 +274,7 @@ the star expands twice, first for $\sim$5,000\,yr ($t=5.005$\,Myr in Figure\,\re
 $\sim$500\,yr ($t=5.015$\,Myr), reaching a maximum size of $300\rsun$. The mass-loss rate mostly remains 
 below $10^{-6}\mdotsun$. In \textsc{m2}, carbon ignites near mass coordinate $1.1\msun$, 
 just as the star begins to develop an SAGB structure. The flame is quenched after only 
-$0.1\msun$ of material has been converted to NeO, leaving behind a hybrid CO/NeO structure. {\bf Without overshooting, the flame propagates all the way to the center, converting the entire core to ONe (see model \textsc{m2}b in Figure\,\ref{fig:1}). The final mass of \textsc{m2} (and \textsc{m2}b) is 1.37\msun}. 
+$0.1\msun$ of material has been converted to NeO, leaving behind a hybrid CO/NeO structure. Without overshooting, the flame propagates all the way to the center, converting the entire core to ONe (see model \textsc{m2}b in Figure\,\ref{fig:1}). The final mass of \textsc{m2} (and \textsc{m2}b) is 1.37\msun. 
 
 To summarise, during the final evolutionary stages, both models are helium 
 depleted and nearing \mch. The ability of the core 
@@ -296,7 +296,7 @@ off neutrino losses, at $\logrhoc \simeq 8.3$ and 8.0 for \textsc{m1} and \texts
 %@arxiver{Rhoc_vs_Tc.pdf}
 \begin{center}
 \includegraphics[width=1.0\textwidth]{Rhoc_vs_Tc.pdf}
-\caption{Evolution of the core density and temperature for \textsc{m1} and \textsc{m2}. The dashed line shows the approximate boundary for electron degeneracy. Burning thresholds for a 100\% abundace of the corresponding species are indicated with dotted lines. The NSE threshold assumes an equilibrium timescale of 1\,s. {\bf In model \textsc{m1}(b), the energy contribution of carbon-consuming reactions is set to zero (see text). \textsc{M2}(b) shows the core evolution of a 1.8\msun without overshooting. While this model stopped at $\logrhoc \simeq 8.2$ due to numerical convergence issues, the final core mass is similar to \textsc{m2}}.}
+\caption{Evolution of the core density and temperature for \textsc{m1} and \textsc{m2}. The dashed line shows the approximate boundary for electron degeneracy. Burning thresholds for a 100\% abundace of the corresponding species are indicated with dotted lines. The NSE threshold assumes an equilibrium timescale of 1\,s.  In model \textsc{m1}b, the energy contribution of carbon-consuming reactions is set to zero (see text). \textsc{M2}b shows the core evolution of a 1.8\msun without overshooting. While this model stopped at $\logrhoc \simeq 8.2$ due to numerical convergence issues, the final core mass is similar to \textsc{m2}.}
 \label{fig:2}
 \end{center}
 \end{figure*}
@@ -305,7 +305,11 @@ mostly of neon and oxygen. The most abundant isotopes have  $\abun{O}{16}\simeq 
 
 When $\logrhoc=9.65$, exothermic electron captures on \iso{Mg}{24} and 
 \iso{Na}{24} start occurring at a substantial rate, raising the temperature 
-adequately to ignite carbon. In turn, this triggers oxygen burning and a thermonuclear runaway at  $\logrhoc= 9.77$. This ignition density is  lower than the   $\logrhoc\ge 9.97$ typically expected for oxygen deflagrations  in pure NeO cores \citep{Jones:2018ule}. As a consequence, severe deleptonization due to \iso{Ne}{20} electron captures is likely avoided. {\bf To demonstrate the importance of residual carbon, we computed a variation of this model in which the energy contribution of all carbon-consuming reactions is artificially suppressed following the main carbon-burning phase (model \textsc{m1b} in Figure\,\ref{fig:2}). In this case, oxygen ignites above $\logrhoc\simeq 10$ and only after \iso{Ne}{20} electron captures have started to occur at a significant rate. Hence, in the absence of residual carbon, this star would produce a core-collapse or a thermonuclear ECSN \citep{Jones:2016asr}}.
+adequately to ignite carbon. In turn, this triggers oxygen burning and a thermonuclear runaway at  $\logrhoc= 9.77$. This ignition density is  
+lower than the   $\logrhoc\ge 9.97$ typically expected for oxygen deflagrations  in pure NeO cores \citep{Jones:2018ule}. As a consequence, 
+severe deleptonization due to \iso{Ne}{20} electron captures is likely avoided.  To demonstrate the importance of residual carbon, we 
+computed a variation of this model in which the energy contribution of all carbon-consuming reactions is artificially suppressed following the 
+main carbon-burning phase (model \textsc{m1b} in Figure\,\ref{fig:2}). In this case, oxygen ignites above $\logrhoc\simeq 10$ and only after \iso{Ne}{20} electron captures have started to occur at a significant rate. Hence, in the absence of residual carbon, this star would produce a core-collapse or a thermonuclear ECSN \citep{Jones:2016asr}.
 
 \textsc{m2} is composed mostly of carbon and oxygen, with $\abun{C}{12}=0.38$ and $\abun{O}{16}=0.60$ respectively. 
  Here, \iso{Na}{23} is not abundant enough to cause  substantial cooling. Consequently, carbon, which is significantly more abundant compared to \textsc{m1}, ignites at $\logrhoc=9.26$. 
@@ -335,15 +339,15 @@ Obviously, the nucleosynthesis yields depend on the actual
 \textsc{m1} achieves nuclear statistical equilibrium (NSE)
 before any significant expansion and deleptonization, then it
 would produce mostly stable iron-peak elements and $\sim 0.3\msun$ of \iso{Ni}{56}, resulting in a sub-luminous 
-explosion that would resemble a SN\,Iax. {\bf Similarly low nickel masses would be expected if the deflagration wave never transitions to a detonation. On the other hand, if NSE is achieved at densities similar to our last \mesa model, following an 
+explosion that would resemble a SN\,Iax.  Similarly low nickel masses would be expected if the deflagration wave never transitions to a detonation. On the other hand, if NSE is achieved at densities similar to our last \mesa model, following an 
 initial expansion (Figure\,\ref{fig:nuc}), more than 
 1\msun\ of \iso{Ni}{56} can be produced, with only moderate
 amounts of iron. Similarly, \textsc{m2} could produce up 
-to 1.3\msun\ of iron elements if it does not expand any further. }
+to 1.3\msun\ of iron elements if it does not expand any further. 
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=0.48\textwidth]{composition.pdf}
+\includegraphics[width=0.5\textwidth]{composition.pdf}
 \caption{Density profiles at maximum compactness (solid lines) and at the end of our \mesa calculations (dashed lines). Regions indicating approximate burning regimes as in \cite{Seitenzahl2017}.}
 \label{fig:nuc}
 \end{center}
@@ -354,22 +358,22 @@ to 1.3\msun\ of iron elements if it does not expand any further. }
 An additional  proxy for the potential connection between exploding \one cores and \ia, is a comparison between their  occurrence rates. 
 
 A zeroth-order upper bound on the number of stripped near-Chandrasekhar mass \one cores per unit solar mass of star formation, $n_\star$, is 
-simply the number of stars, $n_{\rm{He}1.8-2.5}$, that end up developing  helium cores in the relevant mass range, here taken to be $1.8\lesssim M_{\rm{He}}/\msun \lesssim 2.5$, {\bf based on our simulations and the recent results of \cite{Woosley:2019sdf} and \cite{Farmer:2015afs} who also find that carbon ignites off-center in this mass range, indepedently of convective overshoot assumptions. Following 
-\cite{Farmer:2015afs},} we assume that such helium stars originate from ZAMS stars with masses between 7 and 11\msun. Adopting a \cite{Chabrier:2004vw} initial mass function (IMF), one then finds,  $n_\star=n_{\rm{He}1.8-2.5}\simeq 0.0059$, which is larger than the observed number of \ias per solar mass, n$_{\rm \ia}\simeq 0.001-0.003$ \citep[e.g][]{claeys2014a,Maoz:2013hna}.
+simply the number of stars, $n_{\rm{He}1.8-2.5}$, that end up developing  helium cores in the relevant mass range, here taken to be $1.8\lesssim M_{\rm{He}}/\msun \lesssim 2.5$, based on our simulations and the recent results of \cite{Woosley:2019sdf} and \cite{Farmer:2015afs} who also find that carbon ignites off-center in this mass range, indepedently of convective overshoot assumptions. Following 
+\cite{Farmer:2015afs}, we assume that such helium stars originate from ZAMS stars with masses between 7 and 11\msun. Adopting a \cite{Chabrier:2004vw} initial mass function (IMF), one then finds,  $n_\star=n_{\rm{He}1.8-2.5}\simeq 0.0059$, which is larger than the observed number of \ias per solar mass, n$_{\rm \ia}\simeq 0.001-0.003$ \citep[e.g][]{claeys2014a,Maoz:2013hna}.
 
 However, if this channel is only relevant to stars in multiple systems, {\it viz.} the hydrogen envelope can only be removed via binary 
 interactions, then only the fraction of $n_{\rm{He}1.8-2.5}$ in interacting binaries is relevant. 
 Adopting $f_{\rm bin}=0.7$ for the fraction of stars in interacting binaries \citep{Sana:2012px}, a \cite{Chabrier:2004vw} IMF for the primaries (i.e. the 
 initially more massive stars), and a mass-ratio distribution scaling as $\propto q^{-0.1}$ \citep{Sana:2012px}, one finds $n_\star \simeq 0.0038$. Here, systems for which both stars have initial masses between 7 and 11\msun\ are only counted once, as the secondary would evolve in isolation once the primary explodes. Owing to the shape of the IMF, about 80\% of the stars contributing to the former estimate are primaries, i.e. they would explode while still having a less-evolved companion. 
 
-{\bf More realistically, a significant number of these binaries would likely interact before the carbon-burning phase, thereby affecting the growth of the core and consequently the event rate. While detailed  calculations are required to probe the influence  of binary interactions, an upper limit on the expected rate can be obtained by comparing  the frequency of progenitor systems  relative to  the SN Ib/c progenitors, assuming that the latter are dominated by stripped helium stars with masses $\ge 2.5\msun$ \citep{Woosley:2019sdf}, which evolve similarly. Assuming the same IMF as above, one finds a total rate of $\sim 0.8-1.0$ times the SN Ib/c rate, which is consistent with observations \citep[][and references therein]{branch2017}. }
+ More realistically, a significant number of these binaries would likely interact before the carbon-burning phase, thereby affecting the growth of the core and consequently the event rate. While detailed  calculations are required to probe the influence  of binary interactions, an upper limit on the expected rate can be obtained by comparing  the frequency of progenitor systems  relative to  the SN Ib/c progenitors, assuming that the latter are dominated by stripped helium stars with masses $\ge 2.5\msun$ \citep{Woosley:2019sdf}, which evolve similarly. Assuming the same IMF as above, one finds a total rate of $\sim 0.8-1.0$ times the SN Ib/c rate, which is consistent with observations \citep[][and references therein]{branch2017}. 
 
 
 Besides the total number of \ias, a property that may be more challenging to match with observations is the evolution of the \ia rate with cosmic time. \ias from such a channel would have delay times dominated by the main sequence lifetime of the progenitors, i.e. of order 30 to 78\,Myr, for stars with ZAMS masses between 7 and 11\msun. Binaries interacting via early Case\,A RLO prior to the removal of the hydrogen envelope, could contribute events up to $\sim 300$\,Myr following star formation (corresponding to the MS lifetime of a 3.5\msun\ star). 
 These delay times could help account for the high \ia rates in star-forming galaxies, compared to ellipticals \citep{Maoz:2010pz,claeys2014}, but some variant of the DD channel, or more generally a model in which the delay time much larger than the MS lifetime of intermediate-mass stars, would still be required to explain events with much longer delay times.  
-{\bf However,  if the \one core of a WD  were to evolve in a similar way due to 
+ However,  if the \one core of a WD  were to evolve in a similar way due to 
 mass accretion from a companion, or in a merger, then the corresponding explosion could contribute a \ia several Gyrs after star formation \citep[see also][and references therein]{marquardt2015,Schwab:2015bma,Jones:2016asr,Schwab:2017epw,Schwab:2018cnb,kashyap2018,augustine2019}. 
-Finally, if \one explosions produce less nickel than typical \ias, then the short delay times would match those of under-luminous SNe\,Iax which predominately occur in star-forming regions \citep{Jha:2017gwq}. }
+Finally, if \one explosions produce less nickel than typical \ias, then the short delay times would match those of under-luminous SNe\,Iax which predominately occur in star-forming regions \citep{Jha:2017gwq}. 
 
 
 \section{Summary}\label{sec:5}
@@ -378,7 +382,7 @@ after losing their hydrogen  envelopes, may explode as \ias instead of
 undergoing a core-collapse  ECSN. For NeO compositions, the runaway seems to be triggered by the ignition of 
 residual carbon following electron captures on \iso{Mg}{24}, which in turn 
 leads to explosive oxygen burning at densities below $5.9\times 10^{9}\denu$ (Sections\,\ref{sec:2}). 
-For hybrid CO/NeO cores, ignition is triggered by core compression, at a density of $1.8\times10^{9}\denu$, similar to what is expected for CO WD deflagrations. {\bf For either case, the conditions at the onset of oxygen burning are such that the energetics  could resemble closely a typical \ia, or an unter-luminous Iax depending on when and if the initial deflagration transitions into a detonation (Section\,\ref{sec:3})}. 
+For hybrid CO/NeO cores, ignition is triggered by core compression, at a density of $1.8\times10^{9}\denu$, similar to what is expected for CO WD deflagrations. For either case, the conditions at the onset of oxygen burning are such that the energetics  could resemble closely a typical \ia, or an unter-luminous Iax depending on when and if the initial deflagration transitions into a detonation (Section\,\ref{sec:3}). 
 It would be worth considering whether the differences in initial density and 
 composition could lead to distinct nucleosynthetic signatures that would help 
 distinguish these progenitors and/or contribute uniquely to the chemical 
@@ -387,7 +391,7 @@ evolution of the Galaxy \citep[in analogy to ][for ECSNe]{Jones:2018ule}.
 
 
 The frequency of the corresponding progenitor systems 
-is sufficient to account for a considerable fraction of the observed \ia  rate. {\bf Our optimistic zeroth-order upper bounds in  Section\,\ref{sec:4} suggest that \ias from non-accreting progenitors could occur at the same rate as SNe Ib/c, assuming that the latter also result from stripped helium stars}. Since, the bulk of events would occur only $\sim 50$\,Myr after star formation, this channel is mostly relevant to star-forming galaxies. The shorter delay times compared to traditional \ia scenarios, open further interesting avenues for constraining this model, e.g. {\bf by considering the abundance rations of alpha elements relative to iron in metal-poor stars}. 
+is sufficient to account for a considerable fraction of the observed \ia  rate.  Our optimistic zeroth-order upper bounds in  Section\,\ref{sec:4} suggest that \ias from non-accreting progenitors could occur at the same rate as SNe Ib/c, assuming that the latter also result from stripped helium stars. Since, the bulk of events would occur only $\sim 50$\,Myr after star formation, this channel is mostly relevant to star-forming galaxies. The shorter delay times compared to traditional \ia scenarios, open further interesting avenues for constraining this model, e.g.  by considering the abundance rations of alpha elements relative to iron in metal-poor stars. 
 
  While here we demonstrate that the helium envelope is  likely lost only  after the core has grown to \mch, its evolution remains a major uncertainty for this progenitor channel. If helium is removed sufficiently early, e.g. due to binary interactions, then sub-\mch~\one\ WDs would be formed instead. 
  
@@ -407,7 +411,7 @@ nebulae \citep[$\sim 20\%$;][]{Tsebrenko:2014kea}.
 
 \begin{acknowledgements}
 %
- This research made extensive use of NASA's ADS, \textsc{mesa}\footnote{http://mesastar.org} \citep{Paxton:2010ji,Paxton:2013pj,Paxton:2015jva,Paxton:2017eie} and Astropy\footnote{http://www.astropy.org} \citep{Price-Whelan:2018hus}
+ This research made extensive use of NASA's ADS, \textsc{mesa}\footnote{http://mesastar.org} \citep{Paxton:2010ji,Paxton:2013pj,Paxton:2015jva,Paxton:2017eie} and Astropy\footnote{http://www.astropy.org} \citep{Price-Whelan:2018hus}. Figure 1 was created with NuGridPy\footnote{https://github.com/NuGrid/NuGridPy}
 \end{acknowledgements}
 
 
